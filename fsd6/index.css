@@ -1,31 +1,50 @@
 #container {
     display: flex;
-    border: 2px solid black;
+    border: 2px solid #000;
     background-color: lightblue;
     flex-direction: row;
     width: 600px;
     height: 150px;
+    border-radius: 10px;
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
 }
+
 .box {
     background-color: lightcoral;
     width: 25%;
-    height: auto;
-    border: 2px solid white;
+    min-width: 100px;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
 }
-.box :hover{
+
+.box:hover {
     background-color: rgb(241, 97, 220);
     cursor: pointer;
+    transform: scale(1.04);
 }
-.box:nth-child(2),
-.box:nth-child(1){
+
+.box:nth-child(1),
+.box:nth-child(2) {
     background-color: lightyellow;
-
-
+    color: #333;
 }
-.box:nth-child(3){
+
+.box:nth-child(3) {
     background-color: rgb(84, 167, 235);
+    color: #fff;
 }
-img{
-    width: 100%;
-    height: auto;
+
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
 }
