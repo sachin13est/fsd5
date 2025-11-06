@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background: #f9f9f9;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="./welcome.html">
+        <header>
+            <h1>Student Registration Form</h1>
+        </header>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" name="roll" required>
+
+        <label for="gmail">Gmail:</label>
+        <input type="email" id="gmail" name="gmail" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="2" required></textarea>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="language">Language:</label>
+        <select id="language" name="language">
+            <option value="select" selected>Select language</option>
+            <option value="C++">C++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+
+        <label>Hobbies:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+            <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+            <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+            <label><input type="checkbox" name="hobbies" value="travel"> Travel</label>
+        </div>
+
+        <label for="profile">Profile Photo:</label>
+        <input type="file" id="profile" name="profile" accept="image/*">
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <footer>
+            <p>&copy; 2024 Simple Form. All rights reserved.</p>
+        </footer>
+    </form>
