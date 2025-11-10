@@ -1,0 +1,17 @@
+.about-container{
+  padding: 1.25rem;
+}
+.about-content{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.about-section{
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 6px;
+}
+@media(min-width:700px){
+  .about-content{ grid-template-columns: 1fr 1fr; }
+}
