@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "name": "Sample Item 1",
+            "price": 19.99,
+            "quantity": 10
+        },
+        {
+            "name": "Sample Item 2",
+            "price": 29.99,
+            "quantity": 5
+        }
+    ]
+}
