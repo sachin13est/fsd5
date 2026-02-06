@@ -1,6 +1,7 @@
 const fs=require('fs');
 // // sync(synchronous) and async(asynchronous
 // //sync execute all tesks one by one either it's take more time
+// call stack is used to execute all tasks in sync manner
 // for output write node index.js in terminal
 // //async execute all tasks parallelly it will take less time
 // //in async we use callback funtion to handle results
