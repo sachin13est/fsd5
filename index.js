@@ -1,7 +1,7 @@
 const fs=require('fs');
+//node js is a server and backend
 // // sync(synchronous) and async(asynchronous
 // //sync execute all tesks one by one either it's take more time
-// call stack is used to execute all tasks in sync manner
 // for output write node index.js in terminal
 // //async execute all tasks parallelly it will take less time
 // //in async we use callback funtion to handle results
@@ -64,6 +64,19 @@ const fs=require('fs');
 
 // fs.appendFile("./abes.txt",`phd`, () => { });   //async
 
-fs.cpSync("./abes.txt","./c1.txt");
+// fs.cpSync("./abes.txt","./c1.txt");
 
-fs.cp("./abes.txt","./c2.txt", () => { });    //async
+// fs.cp("./abes.txt","./c2.txt", () => { });    //async
+
+// fs.unlinkSync("./c1.txt"); //delete file by sync
+
+fs.unlink("./c2.txt",(err) => {
+    if(err)                           //delete file by async
+{
+     console.log("error",err);
+ }
+else{
+     console.log("successfully");
+ }
+ 
+});
